@@ -1,0 +1,17 @@
+<!--ERB files are typically normal HTML files which allow you to include Ruby code inside tags, which will be parsed before being sent to the browser -->
+<h1>Welcome to Anagrams!</h1>
+<% if @new_word %>
+   <p>La palabra que escribiste fue: <%@new_word%></p>
+<% end%>
+<!-- Aquí deberá ir la forma de HTML -->
+<%= erb :_form_anagram %>
+
+<!--i use erb :_form_anagram (contains the form), insted of this code:
+<form action="/new_word" method="post">
+    Escribe una palabra:
+    <br>
+    <input type="text" name="new_word">
+    <input type="submit" value="Enviar">
+  </form> -->
+
+

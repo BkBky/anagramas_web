@@ -1,0 +1,16 @@
+<h1>Find Anagrams!</h1>
+<!--#paso8 -->
+<% if @new_word %>
+  <p>Estos son anagramas para '<%= @new_word %>':</p>
+  <!--<p># Aqui deberás enlistar todos los anagramas</p>-->
+  <!--#paso9 -->
+ <p><% @new_array_canonicals.each do |w| %></p>
+     <p><%= w.word %></p>
+    <% end%>
+<% end %>
+
+<%= erb :_form_anagram %>
+
+
+
+
